@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Higher-order components for inferno",
   "main": "dist/compose.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -i src/index.js -o dist/compose.js -f cjs -e inferno,inferno-create-element,inferno-component",
     "test": "cross-env BABEL_ENV=test jest --coverage",
