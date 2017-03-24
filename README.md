@@ -1,4 +1,7 @@
-# @trysound/compose
+# @trysound/compose [![Build Status][travis-img]][travis]
+
+[travis-img]: https://travis-ci.org/TrySound/compose.svg
+[travis]: https://travis-ci.org/TrySound/compose
 
 HOC library for inferno
 
@@ -58,3 +61,5 @@ withHandlers(
 Takes an object map of handler creators.
 
 ### withState()
+
+
