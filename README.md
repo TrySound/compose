@@ -62,4 +62,17 @@ Takes an object map of handler creators.
 
 ### withState()
 
+```js
+withState(
+  stateName: string,
+  stateUpdaterName: string,
+  initialState: any | (props: Object) => any
+): HigherOrderComponent
+```
 
+Passes two additional props to the base component: a state value, and a function to update that state value. The state updater has the following signature:
+
+```js
+stateUpdater<T>((prevValue: T) => T): void
+stateUpdater(newValue: any): void
+```
