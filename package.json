@@ -1,6 +1,6 @@
 {
   "name": "@trysound/compose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Higher-order components for inferno",
   "main": "dist/compose.js",
   "files": [
