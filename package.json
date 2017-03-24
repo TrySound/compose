@@ -1,0 +1,41 @@
+{
+  "name": "@trysound/compose",
+  "version": "1.0.0",
+  "description": "Higher-order components for inferno",
+  "main": "dist/compose.js",
+  "scripts": {
+    "build": "rollup -i src/index.js -o dist/compose.js -f cjs -e inferno,inferno-create-element,inferno-component",
+    "test": "cross-env BABEL_ENV=test jest --coverage",
+    "prepublish": "yarn run build"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text-summary",
+      "html"
+    ]
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "repository": "trysound/compose",
+  "author": "Bogdan Chadkin <trysound@yandex.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
+    "cross-env": "^3.2.4",
+    "jest": "^19.0.2",
+    "rollup": "^0.41.6"
+  },
+  "dependencies": {
+    "inferno": "^1.4.2",
+    "inferno-component": "^1.4.2",
+    "inferno-create-element": "^1.4.2"
+  }
+}
